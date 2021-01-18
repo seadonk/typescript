@@ -24,7 +24,7 @@ const scores: Score[] = [
     { name: "field goal", score: 3 },
     { name: "touchdown + miss", score: 6 },
     { name: "touchdown + xp", score: 7 },
-    { name: "touchdown + 2pc", score: 8 }
+    // { name: "touchdown + 2pc", score: 8 }
 ];
 
 const aggregateScores = (games: Game[]) => {
@@ -106,7 +106,7 @@ switch (action) {
         console.log('total games: ', games.length);
         console.log('unique games: ', uniqueGames.length);
 
-        // console.log(`${action} ${value}: ${x.length}`, x);
+        console.log(`${action} ${value}: ${x.length}`, x);
     }
         break;
     case "analyze": {
@@ -121,4 +121,6 @@ switch (action) {
         console.log(`${action} up to ${value} points:`, analysis);
     }
         break;
+
+        
 }
